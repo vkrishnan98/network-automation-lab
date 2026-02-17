@@ -1,0 +1,8 @@
+2026-02-17 22:46:47,329 - INFO - Connecting to 10.1.1.1
+2026-02-17 22:46:48,332 - INFO - Successfully authenticated to Core_Switch_01
+2026-02-17 22:46:48,333 - INFO - Connecting to 10.1.1.5
+2026-02-17 22:46:49,336 - ERROR - Failed to connect to 10.1.1.5: Timeout: Device 10.1.1.5 unreachable.
+2026-02-17 23:10:57,480 - INFO - Connecting to 10.1.1.1
+2026-02-17 23:10:58,482 - INFO - Successfully authenticated to Core_Switch_01
+2026-02-17 23:10:58,483 - INFO - Connecting to 10.1.1.5
+2026-02-17 23:10:59,484 - ERROR - Failed to connect to 10.1.1.5: Timeout: Device 10.1.1.5 unreachable.
