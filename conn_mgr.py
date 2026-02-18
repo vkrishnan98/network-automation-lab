@@ -1,3 +1,4 @@
+import json
 import logging
 import time
 
@@ -35,14 +36,33 @@ class DeviceConnector:
             print(f"ERROR: Could not connect. Check 'network_ops.log' for details.")
             return False
 
-# --- hardcoded fake devices inventory ---
+# --- Removed hardcoded fake devices inventory and input a json inventory file---
 if __name__ == "__main__":
     # Create a test list of "Devices"
-    inventory = [
+    # input a json inventory file"
+
+    '''inventory = [
         {"ip": "10.1.1.1", "name": "Core_Switch_01", "fail": False},
         {"ip": "10.1.1.5", "name": "Branch_Router_02", "fail": True} # This one will fail
     ]
-
     for dev in inventory:
         conn = DeviceConnector(dev['ip'], dev['name'])
-        conn.connect_to_device(simulate_failure=dev['fail'])
+        conn.connect_to_device(simulate_failure=dev['fail'])'''
+
+    # input a json inventory file"
+    try:
+        with open("inventory.json", "r") as f:
+            devices = json.loads(f)
+
+        for dev in devices:
+            conn = DevicConnector(dev['ip'], dev['name'])
+            conn.connect_to_device(simulate_failure=dev['failstatus'])
+
+    except FileNotFoundError:
+            print("Error! inventory.json file not found!")
+    except PermissionError:
+            print("Error! inventory.json file lacks necessary permissions!")
+    except json.JSONDecodeError:
+            print("Error! inventory.json file has malformed syntax and/or invalid values!")
+    except IOError:
+            print("FileI/O or OS related errors!")

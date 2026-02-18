@@ -1,0 +1,17 @@
+[
+    {
+        "ip": "10.1.2.3",
+        "name": "core_router_01",
+        "failstatus": false
+    },
+    {
+        "ip": "10.1.2.4",
+        "name": "core_router_02",
+        "failstatus": false
+    },
+    {
+        "ip": "10.1.2.5",
+        "name": "core_router_03",
+        "failstatus": true
+    }
+]
