@@ -52,10 +52,10 @@ if __name__ == "__main__":
     # input a json inventory file"
     try:
         with open("inventory.json", "r") as f:
-            devices = json.loads(f)
+            devices = json.load(f)
 
         for dev in devices:
-            conn = DevicConnector(dev['ip'], dev['name'])
+            conn = DeviceConnector(dev['ip'], dev['name'])
             conn.connect_to_device(simulate_failure=dev['failstatus'])
 
     except FileNotFoundError:
