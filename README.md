@@ -7,7 +7,8 @@ A production grade logging and exceptional handling code using python and loggin
 ## 🛠️  Current Progress
 - [x] Simulate connections on fake devices created using python dictionary
 - [x] Verified logging capability in similar lines of netmiko exception
-- [ ] Parse interface data into JSON format (In Progress).
+- [x] Parse interface data into JSON format (In Progress).
+- [ ] Data extractor (In Progress).
 
 ## 💻 How to Run
 1. Install dependencies: `pip install netmiko`
