@@ -8,7 +8,8 @@ A production grade logging and exceptional handling code using python and loggin
 - [x] Simulate connections on fake devices created using python dictionary
 - [x] Verified logging capability in similar lines of netmiko exception
 - [x] Parse interface data into JSON format using Genie for scalability, standarized schema and community support
-- [ ] Data extractor (In Progress).
+- [x] Intent based networking - Compare "Desired State"(expected) against the "Actual State" (what Genie parsed) and generate a Compliance Report
+- [ ] Further Data extractor model driven programmability(In Progress)
 
 ## 💻 How to Run
 1. Install dependencies: `pip install netmiko`

@@ -1,0 +1,10 @@
+{
+    "GigabitEthernet1": {
+        "expected_status": "up",
+        "expected_ip": "192.168.1.1"
+    },
+    "GigabitEthernet2": {
+        "expected_status": "up",
+        "expected_ip": "192.168.1.5"
+    }
+}
